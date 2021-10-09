@@ -117,4 +117,15 @@
   a {
     color: $color-primary;
   }
+
+  .nav__item {
+    a {
+      color: $color-primary !important;
+    }
+  }
+
+  .btn-nav {
+    background: $color-primary !important;
+    color: $color-white !important;
+  }
 }

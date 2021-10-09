@@ -334,6 +334,11 @@ a {
       padding: 2rem 4rem; } }
   .sticky a {
     color: #33cc66; }
+  .sticky .nav__item a {
+    color: #33cc66 !important; }
+  .sticky .btn-nav {
+    background: #33cc66 !important;
+    color: #ffffff !important; }
 
 #home {
   background: #33cc66;
@@ -535,6 +540,11 @@ a {
       padding: 2rem 4rem; } }
   .sticky a {
     color: #33cc66; }
+  .sticky .nav__item a {
+    color: #33cc66 !important; }
+  .sticky .btn-nav {
+    background: #33cc66 !important;
+    color: #ffffff !important; }
 
 /* ================ About====================*/
 #about {
