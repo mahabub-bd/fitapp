@@ -1,0 +1,32 @@
+/* ================Buttons===================*/
+a {
+  color: $color-primary;
+  cursor: pointer;
+}
+
+.btn {
+  background: $color-white;
+  font-size: 1.8rem;
+  color: $color-primary;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2.1rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+.btn-nav {
+  padding: 0.75rem 2.6rem;
+}
+.btn-download {
+  padding: 0.72rem 7.1rem;
+  margin-top: 6.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+/* ================Buttons===================*/

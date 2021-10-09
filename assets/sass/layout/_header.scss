@@ -1,0 +1,112 @@
+#home {
+  background: $color-primary;
+
+  color: $color-white;
+  padding: 1rem 0 0;
+  @include responsive(tablet) {
+    padding: 3rem 0 0;
+  }
+  @include responsive(phone) {
+    padding: 2rem 0 0;
+  }
+  @include responsive(tab-port) {
+    padding: 3rem 0 0;
+  }
+
+  position: relative;
+
+  .bg-image {
+    transform: translate3d(-9.35px, 25.4px, 0px) scale(1) rotate(0.715802deg);
+    opacity: 0.6;
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      filter: blur(0.5rem);
+      overflow-x: hidden;
+    }
+  }
+}
+.hero {
+  position: relative;
+}
+.hero_description {
+  @include responsive(phone) {
+    text-align: center;
+  }
+  @include responsive(tablet) {
+    text-align: center;
+  }
+  .rounded-icon {
+    border-radius: 1.25rem;
+    box-shadow: 0 0 6rem #00000015;
+    @include responsive(tab-port) {
+      margin-bottom: 2rem;
+    }
+    @include responsive(tablet) {
+      transform: scale(0.7);
+    }
+  }
+  .download__app {
+    margin-bottom: 3rem;
+    @include responsive(phone) {
+    }
+    &-image {
+      @include responsive(phone) {
+        transform: scale(0.8);
+      }
+      &:not(:last-child) {
+        margin-right: 3rem;
+        @include responsive(phone) {
+          margin-right: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+.leftside {
+  @include responsive(tablet) {
+    text-align: center;
+  }
+  &__image {
+    max-width: 90%;
+
+    @include responsive(phone) {
+      width: 50% !important;
+      margin-top: -4rem;
+    }
+    @include responsive(tab-land) {
+      margin-top: -4rem;
+    }
+  }
+}
+
+#scrollUp {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background: linear-gradient(
+    to bottom,
+    $color-primary 37%,
+    $color-primary 98%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Rounded corners */
+  font-size: 2rem; /* Increase font size */
+  box-shadow: 0 10px 30px rgba(54, 54, 54, 0.3);
+  @include responsive(phone) {
+    width: 30px;
+    height: 30px;
+    font-size: 0.2rem;
+  }
+}

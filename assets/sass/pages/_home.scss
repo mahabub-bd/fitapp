@@ -1,0 +1,101 @@
+/* ================ About====================*/
+#about {
+  padding: 10rem 0;
+  @include responsive(tablet) {
+    padding: 5rem 0;
+  }
+  font-family: $font-roboto;
+  .wrapper {
+    .features_description {
+      margin-top: 18rem;
+      @include responsive(tablet) {
+        margin-top: -3rem;
+      }
+      @include responsive(tab-port) {
+        margin-top: 12rem;
+      }
+      @include responsive(tablet) {
+        margin-top: -1rem;
+      }
+    }
+  }
+}
+/* ================ Features ====================*/
+#features {
+  text-align: center;
+  background: $bg-shade;
+  padding: 4.8rem 0 0 0;
+  @include responsive(phone) {
+    text-align: center;
+  }
+  .container {
+    position: relative;
+  }
+
+  .row {
+    img {
+      margin-top: 4.8rem;
+      width: 60%;
+      @include responsive(phone) {
+        text-align: center;
+      }
+    }
+  }
+}
+.features__bg-image {
+  position: absolute;
+  bottom: 10%;
+  transform: scale(1.3);
+
+  filter: blur(0.3125rem);
+}
+/* ================ Review ====================*/
+#review {
+  padding: 10rem 0;
+  @include responsive(tablet) {
+    padding: 5rem 0;
+  }
+  font-family: $font-roboto;
+  .wrapper {
+    .features_description {
+      margin-top: 14rem;
+      @include responsive(tablet) {
+        margin-top: -3rem;
+      }
+      @include responsive(tab-port) {
+        margin-top: 8rem;
+      }
+      @include responsive(tablet) {
+        margin-top: -1rem;
+      }
+    }
+  }
+}
+/* ================ Review ====================*/
+
+/* ================ Download====================*/
+#download {
+  text-align: center !important;
+  position: relative;
+  background: $color-primary;
+  color: $color-white;
+  padding: 7rem 0;
+  @include responsive(phone) {
+    text-align: center;
+  }
+}
+.features__bg-image {
+  position: absolute;
+  opacity: 0.5;
+  filter: blur(0.3125rem);
+}
+
+.copyright {
+  a {
+    color: $color-white;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: $font-thin;
+  }
+}
+/* ================ Download====================*/

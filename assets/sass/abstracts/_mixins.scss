@@ -1,0 +1,61 @@
+@mixin animation($name, $duration, $timing) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+}
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+// Media Quary
+/*
+Mobile =              0-576 PX 
+Tablet =            576-768 PX
+Tablet Portrait     768-900 PX 
+Tablet Landscape   900-1200 PX
+Normal Style      1200-1800 PX 
+
+Big Desktop             1800PX+
+*/
+
+/*
+$breakpoint arguement 
+-- phone
+-- tablet 
+-- tab-port
+-- tab-land
+-- big-desktop
+ORDER : Base + Typography > Genaral Layout + Grid > Page Layout  > Components 
+*/
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 36em) {
+      //576px
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (max-width: 46em) {
+      //768px
+      @content;
+    }
+  } @else if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      @content;
+    }
+  } @else if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  } @else if $breakpoint == big-desktop {
+    @media only screen and (min-width: 113em) {
+      //1800px+
+      @content;
+    }
+  }
+}
+// Media Quary

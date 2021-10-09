@@ -1,0 +1,120 @@
+/*==================Nav====================*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: $color-white;
+  align-items: center;
+
+  margin-bottom: 7rem;
+
+  &__logo {
+    a {
+      font-size: 3.86rem;
+      font-family: $font-opensans;
+      font-style: italic;
+      color: $color-white;
+      font-weight: $font-black;
+    }
+  }
+  &__menu {
+    @include responsive(tab-port) {
+      // For Mobile menu
+      display: none;
+    }
+    .nav__list {
+      .nav__item {
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: 5.5rem;
+        }
+        a {
+          font-size: 1.8rem;
+          color: $color-white;
+          font-family: $font-roboto;
+          font-weight: $font-regular;
+        }
+      }
+    }
+  }
+}
+#toggle {
+  position: absolute;
+  right: 10%;
+  display: none; /* Hide Mobile Nav on Desktop or big devices */
+  cursor: pointer;
+  user-select: none;
+  font-size: 4rem;
+  svg {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  @include responsive(phone) {
+    svg {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+  }
+  @include responsive(tab-port) {
+    //for mobile menu
+    display: block;
+  }
+}
+.overlay {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 9999;
+  overflow: hidden;
+  color: $color-primary;
+  transition: 0.3s;
+  transform-origin: top;
+  text-align: center;
+  &__content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+
+    a {
+      color: #363636 !important;
+      font-size: 6rem;
+      font-weight: 600;
+      display: block;
+      margin-top: 2rem;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      @include responsive(phone) {
+        font-size: 4rem;
+      }
+
+      &:hover {
+        color: $color-primary !important;
+      }
+    }
+  }
+}
+
+/*==================Sticky  Menu====================*/
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 500;
+  box-shadow: 0 10px 30px #e6e6e6;
+  color: $color-primary !important;
+  padding: 1rem 4rem;
+  @include responsive(tablet) {
+    padding: 2rem 4rem;
+  }
+  transition: 0.3s;
+  a {
+    color: $color-primary;
+  }
+}

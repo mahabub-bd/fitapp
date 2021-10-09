@@ -1,0 +1,53 @@
+body {
+  font-family: $font-opensans;
+
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+
+.heading__hero {
+  font-size: 6.4rem;
+  font-weight: $font-thin;
+
+  @include responsive(tab-port) {
+    font-size: 5rem;
+    margin-bottom: -2rem;
+  }
+  @include responsive(phone) {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.paragraph__hero,
+.paragraph__features {
+  font-size: 1.8rem;
+  font-family: $font-roboto;
+  font-weight: $font-light;
+  line-height: 32px;
+  text-align: left !important;
+  @include responsive(tablet) {
+    text-align: left;
+  }
+}
+
+.heading__features {
+  font-family: $font-roboto;
+  font-size: 4.8rem;
+  font-weight: $font-light;
+  margin-bottom: 4rem;
+  @include responsive(tab-port) {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  @include responsive(tab-land) {
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  @include responsive(phone) {
+    font-size: 3rem;
+    text-align: left;
+  }
+}

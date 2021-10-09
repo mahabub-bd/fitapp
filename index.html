@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Fit App</title>
+  </head>
+
+  <body>
+    <!-- ======================Header Area ======================= -->
+    <header id="home">
+      <div
+        class="bg-image"
+        data-speed-x="10"
+        data-speed-y="10"
+        data-speed-rotade="-10"
+      >
+        <img src="assets/img/hero_bg.png" alt="" />
+      </div>
+
+      <div class="hero">
+        <div class="row">
+          <nav class="nav sticky">
+            <div class="nav__logo">
+              <a href="#home" class="logo">FitApp</a>
+            </div>
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#features" class="nav__link">Features</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#review" class="nav__link">Reviews</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#download"
+                    ><button class="btn btn-nav">Get App</button></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div id="toggle">
+              <span onclick="openNav()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: currentColor; transform: ; msfilter: "
+                >
+                  <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg
+              ></span>
+            </div>
+
+            <div id="myNav" class="overlay" style="width: 0px">
+              <div class="overlay__content">
+                <a
+                  href="javascript:void()"
+                  class="close-btn"
+                  onclick="closeNav()"
+                  >X</a
+                >
+                <a href="#home" onclick="closeNav()">HOME</a>
+                <a href="#about" onclick="closeNav()">About</a>
+                <a href="#features" onclick="closeNav()">Features</a>
+                <a href="#howto" onclick="closeNav()">Reviews</a>
+                <a href="#download" onclick="closeNav()">Blog</a>
+              </div>
+            </div>
+          </nav>
+          <div class="col-2-of-3">
+            <div class="hero_description">
+              <img class="rounded-icon mb-6" src="assets/img/icon.png" alt="" />
+
+              <h1 class="heading__hero mb-4">
+                Helps you eat <span class="text-bold"> better.</span>
+              </h1>
+              <p class="paragraph__hero mb-6">
+                FitApp is a free calorie counting and diet app PSD template
+                which includes high quality 9 screens. This template can be very
+                helpful if you're planning to build food tracking application.
+              </p>
+              <div class="download__app mb-3">
+                <img
+                  class="download__app-image"
+                  src="assets/img/appstore.png"
+                  alt="appstore"
+                />
+                <img
+                  class="download__app-image"
+                  src="assets/img/playstore.png"
+                  alt="appstore"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="leftside">
+              <img
+                class="leftside__image"
+                src="assets/img/iphone5c.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        onclick="topScroll()"
+        id="scrollUp"
+        title="Go to top"
+        style="display: block"
+      >
+        <img src="./assets/icon/arrow.svg" alt="" />
+      </button>
+    </header>
+    <!-- ======================Header Area End======================= -->
+    <!-- ======================About Start======================= -->
+    <section id="about">
+      <div class="row">
+        <div class="col-1-of-2">
+          <img src="assets/img/iphone5c-2.png" alt="" />
+        </div>
+        <div class="col-1-of-2">
+          <div class="wrapper">
+            <div class="features_description">
+              <h2 class="heading__features">
+                Best calorie <span class="text-green">counter app!</span>
+              </h2>
+              <p class="paragraph__features">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================About End======================= -->
+    <!-- ======================Features  Start======================= -->
+
+    <section id="features" class="bg-shade text-center pt-5">
+      <div class="container">
+        <div
+          class="features__bg-image anm"
+          data-speed-x="10"
+          data-speed-rotate="-10"
+          style="
+            transform: translate3d(-61.8px, 0px, 0px) scale(1)
+              rotate(2.34073deg);
+            opacity: 1;
+          "
+        >
+          <img class="text-center" src="assets/img/plan-bg.png" alt="" />
+        </div>
+        <div class="row">
+          <h2 class="heading__features">
+            A simple way to <span class="text-green">plan your diet!</span>
+          </h2>
+          <p class="paragraph__features">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <img
+            class="mt-5 text-center"
+            src="assets/img/app-screenshot.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ======================Features  End======================= -->
+    <!-- ======================Review  Start======================= -->
+    <section id="review">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="wrapper">
+            <div class="features_description">
+              <h2 class="heading__features">
+                Manage your <span class="text-green">meal time</span>
+              </h2>
+              <p class="paragraph__features">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <img src="assets/img/meal.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ======================Review  End======================= -->
+    <!-- ======================Download Start======================= -->
+    <section id="download" class="bg-shade text-center pt-5">
+      <div class="features__bg-image">
+        <img class="text-center" src="assets/img/download-bg.png" alt="" />
+      </div>
+      <div class="row">
+        <h2 class="heading__features text-center">
+          Download, customize & <span class="text-bold">enjoy!</span>
+        </h2>
+        <p class="paragraph__features">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+        <a href="#download"
+          ><button class="btn btn-download">Get App</button></a
+        >
+      </div>
+      <div class="copyright">
+        <a href="">&COPY;Copyright All Right Reserve Mahabub Hossain</a>
+      </div>
+    </section>
+    <!-- ================ JS ================= -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
