@@ -161,7 +161,8 @@ body {
 
 /* ================Buttons===================*/
 a {
-  color: #33cc66; }
+  color: #33cc66;
+  cursor: pointer; }
 
 .btn {
   background: #ffffff;
@@ -183,8 +184,9 @@ a {
   transition: 0.5s;
   cursor: pointer; }
   .btn-download:hover {
-    transform: scale(1.2); }
+    transform: scale(1.1); }
 
+/* ================Buttons===================*/
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -290,6 +292,7 @@ a {
   background-color: white;
   z-index: 9999;
   overflow: hidden;
+  color: #33cc66;
   transition: 0.3s;
   transform-origin: top;
   text-align: center; }
@@ -301,7 +304,7 @@ a {
     transform: translate(-50%, -50%);
     display: block; }
     .overlay__content a {
-      color: #363636;
+      color: #363636 !important;
       font-size: 6rem;
       font-weight: 600;
       display: block;
@@ -320,18 +323,17 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  margin: 0 auto;
   background-color: #fff;
   z-index: 500;
   box-shadow: 0 10px 30px #e6e6e6;
   color: #33cc66 !important;
   padding: 1rem 4rem;
   transition: 0.3s; }
-  .sticky .btn {
-    background: #33cc66 !important;
-    color: #ffffff !important; }
+  @media only screen and (max-width: 46em) {
+    .sticky {
+      padding: 2rem 4rem; } }
   .sticky a {
-    color: #33cc66 !important; }
+    color: #33cc66; }
 
 #home {
   background: #33cc66;
@@ -382,8 +384,14 @@ a {
 
 .hero_description .download__app {
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 36em) {
+    .hero_description .download__app-image {
+      transform: scale(0.8); } }
   .hero_description .download__app-image:not(:last-child) {
     margin-right: 3rem; }
+    @media only screen and (max-width: 36em) {
+      .hero_description .download__app-image:not(:last-child) {
+        margin-right: 0.6rem; } }
 
 @media only screen and (max-width: 46em) {
   .leftside {
@@ -485,6 +493,7 @@ a {
   background-color: white;
   z-index: 9999;
   overflow: hidden;
+  color: #33cc66;
   transition: 0.3s;
   transform-origin: top;
   text-align: center; }
@@ -496,7 +505,7 @@ a {
     transform: translate(-50%, -50%);
     display: block; }
     .overlay__content a {
-      color: #363636;
+      color: #363636 !important;
       font-size: 6rem;
       font-weight: 600;
       display: block;
@@ -515,18 +524,17 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  margin: 0 auto;
   background-color: #fff;
   z-index: 500;
   box-shadow: 0 10px 30px #e6e6e6;
   color: #33cc66 !important;
   padding: 1rem 4rem;
   transition: 0.3s; }
-  .sticky .btn {
-    background: #33cc66 !important;
-    color: #ffffff !important; }
+  @media only screen and (max-width: 46em) {
+    .sticky {
+      padding: 2rem 4rem; } }
   .sticky a {
-    color: #33cc66 !important; }
+    color: #33cc66; }
 
 /* ================ About====================*/
 #about {
@@ -596,7 +604,7 @@ a {
   position: relative;
   background: #33cc66;
   color: #ffffff;
-  padding: 10rem 0; }
+  padding: 7rem 0; }
   @media only screen and (max-width: 36em) {
     #download {
       text-align: center; } }
@@ -605,5 +613,11 @@ a {
   position: absolute;
   opacity: 0.5;
   filter: blur(0.3125rem); }
+
+.copyright a {
+  color: #ffffff;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 100; }
 
 /* ================ Download====================*/
