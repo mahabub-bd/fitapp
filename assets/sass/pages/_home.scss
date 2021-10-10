@@ -46,7 +46,8 @@
   position: absolute;
   bottom: 10%;
   transform: scale(1.3);
-
+  transform: translate3d(-61.8px, 0px, 0px) scale(1) rotate(2.34073deg);
+  opacity: 1;
   filter: blur(0.3125rem);
 }
 /* ================ Review ====================*/
@@ -82,12 +83,17 @@
   padding: 7rem 0;
   @include responsive(phone) {
     text-align: center;
+    padding: 4rem 0;
   }
 }
-.features__bg-image {
+.bg-image {
   position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(0.5rem);
   opacity: 0.5;
-  filter: blur(0.3125rem);
 }
 
 .copyright {

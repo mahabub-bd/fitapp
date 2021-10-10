@@ -72,7 +72,8 @@
     text-align: center;
   }
   &__image {
-    max-width: 90%;
+    max-width: 80%;
+    margin-bottom: -0.5rem;
 
     @include responsive(phone) {
       width: 50% !important;
@@ -80,6 +81,9 @@
     }
     @include responsive(tab-land) {
       margin-top: -4rem;
+    }
+    @include responsive(tab-port) {
+      max-width: 80%;
     }
   }
 }

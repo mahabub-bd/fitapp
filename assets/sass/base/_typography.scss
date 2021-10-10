@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 
-.heading__hero {
+.heading__primary {
   font-size: 6.4rem;
   font-weight: $font-thin;
 
@@ -19,8 +19,7 @@ body {
   }
 }
 
-.paragraph__hero,
-.paragraph__features {
+.paragraph__primary {
   font-size: 1.8rem;
   font-family: $font-roboto;
   font-weight: $font-light;
@@ -28,10 +27,11 @@ body {
   text-align: left !important;
   @include responsive(tablet) {
     text-align: left;
+    line-height: 24px;
   }
 }
 
-.heading__features {
+.heading__secondary {
   font-family: $font-roboto;
   font-size: 4.8rem;
   font-weight: $font-light;

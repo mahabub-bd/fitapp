@@ -19,14 +19,19 @@ a {
 }
 .btn-nav {
   padding: 0.75rem 2.6rem;
+  color: $color-primary;
 }
 .btn-download {
   padding: 0.72rem 7.1rem;
   margin-top: 6.5rem;
   transition: 0.5s;
   cursor: pointer;
+  @include responsive(phone) {
+    margin-top: 4.5rem;
+  }
   &:hover {
     transform: scale(1.1);
   }
 }
+
 /* ================Buttons===================*/

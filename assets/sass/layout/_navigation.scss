@@ -6,6 +6,9 @@
   align-items: center;
 
   margin-bottom: 7rem;
+  @include responsive(phone) {
+    margin-bottom: 3rem;
+  }
 
   &__logo {
     a {
@@ -32,11 +35,15 @@
           color: $color-white;
           font-family: $font-roboto;
           font-weight: $font-regular;
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
   }
 }
+
 #toggle {
   position: absolute;
   right: 3rem;
@@ -65,13 +72,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
+
+  background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 9999;
   overflow: hidden;
   color: $color-primary;
-  transition: 0.3s;
-  transform-origin: top;
+  transition: 0.5s;
+  transform-origin: center;
   text-align: center;
+  border: none;
   &__content {
     text-align: center;
     position: absolute;
@@ -93,7 +102,7 @@
       }
 
       &:hover {
-        color: $color-primary !important;
+        color: $color-white !important;
       }
     }
   }
@@ -116,6 +125,9 @@
   transition: 0.3s;
   a {
     color: $color-primary;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   .nav__item {
@@ -123,9 +135,8 @@
       color: $color-primary !important;
     }
   }
-
   .btn-nav {
-    background: $color-primary !important;
-    color: $color-white !important;
+    background: $color-primary;
+    color: $color-white;
   }
 }
