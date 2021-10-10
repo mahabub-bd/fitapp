@@ -2,7 +2,7 @@
   max-width: $grid-width;
   @include responsive(tablet) {
     max-width: 56.25rem;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
   @include responsive(tab-port) {
     max-width: 75rem;
@@ -10,7 +10,7 @@
   }
   @include responsive(tab-land) {
     max-width: 112.5rem;
-    padding: 0 6rem;
+    padding: 0 3rem;
   }
   margin: 0 auto;
 

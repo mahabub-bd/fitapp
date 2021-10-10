@@ -120,7 +120,10 @@
   color: $color-primary !important;
   padding: 1rem 4rem;
   @include responsive(tablet) {
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
+  }
+  @include responsive(tab-land) {
+    padding: 1rem 4rem;
   }
   transition: 0.3s;
   a {
