@@ -358,7 +358,7 @@ a {
 #home {
   background: #33cc66;
   color: #ffffff;
-  padding: 1rem 0 0;
+  padding: 2rem 0 0;
   position: relative; }
   @media only screen and (max-width: 46em) {
     #home {
